@@ -1,6 +1,6 @@
 Problem Sheet Weekly Tasks
 
-Task 1:
+<h1>Task 1:</h1>
 
 "How is BMI calculated?" - Ramsey Health Care <br/>
 Available at: https://www.ramsayhealth.co.uk/weight-loss-surgery/bmi/bmi-formula [Accessed: 28/1/21]
@@ -11,11 +11,11 @@ Vanderplas, Jacob T. <i>A Whirlwind Tour of Python.</i> O'Reilly Media, 2016. pp
 Available at: https://www.bmicalculator.ie/ [Accessed:
 28/1/21]
 
-Task 2:
+<h1>Task 2:</h1>
 
-Task 3: 
+<h1>Task 3:</h1>
 
-"How to Convert a Float List to an Integer List in Python" - Evgeny Erunov
+"How to Convert a Float List to an Integer List in Python" - Evgeny Erunov <b/>
 Available at:
 https://blog.finxter.com/how-to-convert-a-float-list-to-an-integer-list-in-python/#:~:text=The%20most%20Pythonic%20way%20to,the%20int(x)%20constructor
 
