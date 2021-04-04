@@ -38,3 +38,19 @@ plt.savefig('myPlot.jpg')
 
 # displays the plot figure
 plt.show()
+
+
+'''
+REFERENCES:
+
+[1] "matplotlib.pyplot.plot" - matplotlib 
+Available at: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html [Accessed: 26/3/2021]
+[2] "Style sheets reference" - matplotlib 
+Available at: https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html [Accessed: 30/3/2021]
+[3] "Matplotlib Pyplot" - w3schools 
+Available at: https://www.w3schools.com/python/matplotlib_pyplot.asp [Accessed: 26/3/2021]
+[4] "Python Plotting With Matplotlib (Guide)" - Brad Solomon 
+Available at: https://realpython.com/python-matplotlib-guide/ [Accessed: 28/3/2021]
+[5] "How to change the font size on a matplotlib plot" - Herman Schaaf
+Available at: https://stackoverflow.com/questions/3899980/how-to-change-the-font-size-on-a-matplotlib-plot [Accessed: 30/3/2021]
+'''
