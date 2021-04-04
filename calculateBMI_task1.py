@@ -19,9 +19,7 @@ REFERENCES:
 
 [1] "How is BMI calculated?" - Ramsey Health Care, 
     Available at: https://www.ramsayhealth.co.uk/weight-loss-surgery/bmi/bmi-formula [Accessed: 28/1/21]
-
 [2] Vanderplas, Jacob T. A Whirlwind Tour of Python. O'Reilly Media, 2016. pp. 9
-
 [3] "BMI Calculator" - WebDoctor, Available at: https://www.bmicalculator.ie/ [Accessed:
     28/1/21]
 '''
