@@ -1,12 +1,12 @@
-#Pands Problem Sheet Tasks#
-###This repository is dedicated to the fulfilment of the Programming and Scripting assessment as part of the Higher Diploma in Data Analytics at GMIT.###
-###Creator: Isabella Doyle, Email: G00398800@gmit.ie###
+# Pands Problem Sheet Tasks
+### This repository is dedicated to the fulfilment of the Programming and Scripting assessment as part of the Higher Diploma in Data Analytics at GMIT.
+### Creator: Isabella Doyle, Email: G00398800@gmit.ie
 
-##Task 1:##
+## Task 1:
 
 *Objective: Write a program that calculates somebody's Body Mass Index (BMI).*
 
-###Program : calculateBMI_task1.py###
+### Program : calculateBMI_task1.py
 
 Understanding the code: 
 
