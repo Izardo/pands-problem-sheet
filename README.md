@@ -1,6 +1,6 @@
 # Pands Problem Sheet Tasks
-### This repository is dedicated to the fulfilment of the Programming and Scripting assessment as part of the Higher Diploma in Data Analytics at GMIT.
-### Creator: Isabella Doyle, Email: G00398800@gmit.ie
+This repository is dedicated to the fulfilment of the Programming and Scripting assessment as part of the Higher Diploma in Data Analytics at GMIT.</br>
+Creator: Isabella Doyle, Email: G00398800@gmit.ie
 
 ## Task 1:
 
@@ -14,7 +14,7 @@ Understanding the code:
 2. The variable BMI contains the mathematical equation for calculating BMI. Also contained in the variable is 2 functions; one which rounds the sum to two decimal places (using the round() function) and another which converts the sum to a string value (using the str() function) so that it can be concantenated with another string in the print statement. 
 3. The program will print the BMI for the input
 
-References:
+#### References:
 
 [1] "How is BMI calculated?" Ramsey Health Care, 28 Jan. 2021,
 www.ramsayhealth.co.uk/weight-loss-surgery/bmi/bmi-formula</br>
