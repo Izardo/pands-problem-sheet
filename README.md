@@ -6,6 +6,7 @@ Creator: Isabella Doyle, Email: G00398800@gmit.ie
 ## Task 1:
 
 *Objective: Write a program that calculates somebody's Body Mass Index (BMI).*
+### Program : calculateBMI_task1.py
 ```
 weight = int(input("Enter weight(Kg):"))       
 height = int(input("Enter height(cm):"))        
@@ -13,9 +14,8 @@ height = int(input("Enter height(cm):"))
 BMI = str(round(weight/((height/100)**2),2))
 
 
-print("Your BMI is " + BMI)```
-### Program : calculateBMI_task1.py
-
+print("Your BMI is " + BMI)
+```
 Understanding the code: 
 
 1. The input() function prompts the user to enter their height and weight, the string values are then converted to integer (using the int() function) and respectively assigned to the variables height and weight. 
