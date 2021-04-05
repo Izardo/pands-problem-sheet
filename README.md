@@ -6,7 +6,7 @@
 
 *Objective: Write a program that calculates somebody's Body Mass Index (BMI).*
 
-###calculateBMI_task1.py###
+###Program : calculateBMI_task1.py###
 
 Understanding the code: 
 
