@@ -4,7 +4,7 @@
 
 [1] "How is BMI calculated?" Ramsey Health Care, 28 Jan. 2021,
 www.ramsayhealth.co.uk/weight-loss-surgery/bmi/bmi-formula</br>
-[2] Vanderplas, Jacob T. <i>A Whirlwind Tour of Python.</i> O'Reilly Media, 2016. pp. 9</br>
+[2] Vanderplas, Jacob T. *A Whirlwind Tour of Python.* O'Reilly Media, 2016. pp. 9</br>
 [3] "BMI Calculator." WebDoctor, 28 Jan. 2021, www.bmicalculator.ie 
 
 <h2>Task 2:</h2>
@@ -17,7 +17,7 @@ www.ramsayhealth.co.uk/weight-loss-surgery/bmi/bmi-formula</br>
 
 [1] "How to Convert a Float List to an Integer List in Python." Evgeny Erunov, 07 Feb. 2021,
     blog.finxter.com/how-to-convert-a-float-list-to-an-integer-list-in-python</br>
-[2] Vanderplas, Jacob T. <i>A Whirlwind Tour of Python.<i/> O'Reilly Media, 2016. pp. 37</br>
+[2] Vanderplas, Jacob T. *A Whirlwind Tour of Python.* O'Reilly Media, 2016. pp. 37</br>
 [3] "Python Lists." w3schools, 07 Feb. 2021, www.w3schools.com/python/python_lists.asp</br>
 [4] "Python For Loops." w3schools, 07 Feb. 2021, www.w3schools.com/python/python_for_loops.asp
 
