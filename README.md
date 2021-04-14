@@ -42,28 +42,38 @@ print("Your original string: {}. New modified string: {}".format(string, modStri
 ```
 Understanding the code: 
 
-1. 
+1. This program requests an input of text from the user and assigns the string to the variable 'string'.
+2. It then modifies the value in string, starting a index 0, so that every second character is placed in reverse order in the variable 'modString'. 
+3. Both the original and modified texts are printed using the .format method to concatenate them into a sentence. 
+4. Example output: Your original string: hello there. New modified string: eetolh
+
 #### References:
 
 [1] "Built-in Functions." The Python Standard Library, 29 Jan. 2021, docs.python.org/3/library/functions.html</br> 
 [2] "Python Numbers." w3schools, 29 Jan. 2021, www.w3schools.com/python/python_numbers.asp</br>
-[3] "7.1. Fancier Output Formatting" The Python Standard Library, 29 Jan. 2021, www.docs.python.org/          tutorial/inputoutput.html
+[3] "7.1. Fancier Output Formatting" The Python Standard Library, 29 Jan. 2021, www.docs.python.org/tutorial/inputoutput.html
 
 ## Task 3:
 
 *Objective: Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one. Have the program end if the current value is one.*
 ### Program: collatz_task3.py
 ```
-while num != 1:                                 # while loop to repeatedly perform sum until num equals 1
-    if num % 2 == 0:                            # checks if num is even using the modulus operator
-        num = num / 2                           # if even, this block of code is performed
-        numList.append(num)                     # value produced by sum is added to numList
-    else:                                       # this will execute if num is odd
-        num = ((num * 3) + 1)                   # performs arithmmetic on value stored in num
-        numList.append(num)                     # adds the result value to numList
-                                                # DELETE CODE COMMENTS
+while num != 1:         
+    if num % 2 == 0:      
+        num = num / 2            
+        numList.append(num)        
+    else:                      
+        num = ((num * 3) + 1)           
+        numList.append(num)                 
+                                               
 print([int(num) for num in numList])
 ```
+Understanding the code:
+
+1. The while loop performs a repeat loop as long as the number equals 1.
+2. Inside the while loop is an if statement. which will be exected if the number is even (the modulus operand is used to check this). If the if statment is true, the indented code block will be executed - dividing the the value stored in 'num' by two and appending the result to the numList. If the if statement is false, the else statement will be executed - 'num' is multiplied by 3 and 1 is added to it and the resut is appended to 'numList'.
+3. When 'num' equals 1, the while statement will evaluate as false causing a break out of the while loop. 
+4. The print statment is then executed, which converts the list objects in 'numList' to integer objects, finally, printing the list of integers.
 
 #### References:
 
@@ -77,18 +87,20 @@ print([int(num) for num in numList])
 *Objective: Write a program that outputs whether or not today is a weekday.*
 ### Program: weekdayWeekend_task4.py
 ```
-from datetime import datetime           # imports the datetime module from the datetime library
-today = datetime.today().strftime('%A') # accesses the current day with the today() method, while the .strftime() 
-                                        # method converts the current day to a string value and assigns it to the variable 'today'
+from datetime import datetime  
+today = datetime.today().strftime('%A')
 
-# if-else statement determines which print statement will be executed, 
-# if the value in variable 'today' matches a weekday, the first statement will be executed 
-# otherwise the second statment will be executed
 if today == "Monday" or "Tuesday" or "Wednesday" or "Thursday":
     print("Today is {}. It's a weekday!".format(today))
 else:
     print("Today is {}. It is the weekend. Yay!")
 ```
+Understanding the code:
+
+1. The program first imports the datetime module from the datetime library.
+2. It then accesses the current day with the .today() method, converts it to a string object (using .strftime) and assigns it to the variable 'today'.
+3. The if-else statement determines which block of code will be executed. If the value in the 'today' variable matches a weekday, the if statement will evaluate to true and the indented code will be executed. Otherwise, the else statment will evaluate to true and its indented code will execute.
+
 ### References:
 
 [1] "8.1.7. strftime() and strptime() Behavior." The Python Standard Library, 12 Feb. 2021, docs.python.org/2/library/datetime.html#strftime-strptime-behavior</br>
@@ -98,24 +110,23 @@ else:
 *Objective: Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.*
 ### Program: sqrt_task5.py
 ```
-# the sqrt function takes in two values, the second is pre-defined
-def sqrt(number, iterations = 10): 
+numList = [0, 0]   
 
-    a = float(number)           # value that we want to get the square root of
+def sqrt(number): 
 
-    for _ in range(iterations): # this for loop iterates 10 times get an approximate sqaure root of a number
-        number = 0.5 * (number + a / number)  # uses newton's formula to estimate the square of a number
-    return round(number, 1)     # rounds number to 1 decimal place
+    a = float(number)                   
 
-# main program requests the user to input a positive number
-number = float(input("Please enter a positive number: ")) 
+    while number != numList[-2]:       
+        number = 0.5 * (number + a / number)   
+        numList.append(number)     
+    return round(number, 1)  
 
-# If statment filters out negative numbers and the number 0
-# If else statement executes, the square root is returned
+number = float(input("Please enter a positive number: "))
+
 if number <= 0:  
-    print("Please enter a POSITIVE number: ")  # prompts the user to enter a positive number
+    print("Please enter a POSITIVE number: ")
 else:  
-    print("The square root of {} is approximately {}".format(number, sqrt(number)))
+    print("The square root of {} is approximately {}".format(number, sqrt(number))) 
 
 ```
 #### References:
