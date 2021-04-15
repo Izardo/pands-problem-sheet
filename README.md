@@ -16,7 +16,7 @@ BMI = str(round(weight/((height/100)**2),2))
 
 print("Your BMI is " + BMI)
 ```
-Understanding the code: 
+#### Understanding the code: 
 
 1. The input() function prompts the user to enter their height and weight, the string values are then converted to integer (using the int() function) and respectively assigned to the variables height and weight. 
 2. The variable BMI contains the mathematical equation for calculating BMI. Also contained in the variable are 2 functions; one which rounds the sum of the equation to two decimal places (using the round() function) and another that converts the sum to a string value (using the str() function) so that it can be concantenated with another string in the print statement. 
@@ -38,7 +38,6 @@ string = input("Enter text:")
 modString = string[::-2]
 
 print("Your original string: {}. New modified string: {}".format(string, modString))
-
 ```
 Understanding the code: 
 
@@ -68,10 +67,10 @@ while num != 1:
                                                
 print([int(num) for num in numList])
 ```
-Understanding the code:
+#### Understanding the code:
 
 1. The while loop performs a repeat loop as long as the number equals 1.
-2. Inside the while loop is an if statement. which will be exected if the number is even (the modulus operand is used to check this). If the if statment is true, the indented code block will be executed - dividing the the value stored in 'num' by two and appending the result to the numList. If the if statement is false, the else statement will be executed - 'num' is multiplied by 3 and 1 is added to it and the resut is appended to 'numList'.
+2. Inside the while loop is an if statement. Which is exected if the number is even (the modulus operand is used to check this). If the if statment is true, the indented code block will be executed - dividing the the value stored in 'num' by two and appending the result to the numList. If the if statement is false, the else statement will be executed - 'num' is multiplied by 3 and 1 is added to it and the resut is appended to 'numList'.
 3. When 'num' equals 1, the while statement will evaluate as false causing a break out of the while loop. 
 4. The print statment is then executed, which converts the list objects in 'numList' to integer objects, finally, printing the list of integers.
 
@@ -95,7 +94,7 @@ if today == "Monday" or "Tuesday" or "Wednesday" or "Thursday":
 else:
     print("Today is {}. It is the weekend. Yay!")
 ```
-Understanding the code:
+#### Understanding the code:
 
 1. The program first imports the datetime module from the datetime library.
 2. It then accesses the current day with the .today() method, converts it to a string object (using .strftime) and assigns it to the variable 'today'.
@@ -114,21 +113,28 @@ numList = [0, 0]
 
 def sqrt(number): 
 
-    a = float(number)                   
+    a = float(number) 
 
-    while number != numList[-2]:       
-        number = 0.5 * (number + a / number)   
-        numList.append(number)     
-    return round(number, 1)  
+    while number != numList[-2]:
+        number = 0.5 * (number + a / number) 
+        numList.append(number)
+    return round(number, 1)
 
-number = float(input("Please enter a positive number: "))
+number = float(input("Please enter a positive number: ")) 
 
-if number <= 0:  
-    print("Please enter a POSITIVE number: ")
-else:  
-    print("The square root of {} is approximately {}".format(number, sqrt(number))) 
-
+while number <= 0:
+    number = float(input("Please enter a POSITIVE number: "))
+if number >= 0:
+    print("The square root of {} is approximately {}".format(number, sqrt(number)))
 ```
+
+#### Understanding the code:
+
+1. First, the program prompts the user to enter a positive number. This number is then converted to a floating point number and stored in the variable 'number'. 
+2. The while loop coupled with the if statement filters out negative numbers and the number 0, while continously prompting the user to enter a postive number.
+3. When a positive number is entered, the code inside the final if statement will be executed which contains a call to the function 'sqrt(number)'. This will print a sentence containing the original number entered and its approx. square root.
+4. The sqrt() function, takes in the parameter 'number'. The while loop continously performs aritmetic to get the approximate square root of a number. After each iteration, the result of the calculation is added to numList. The while loop stops when the result of the arithmetic is the same twice in a row. This is done by comparing the current 'number' to the second last number in the numList. 
+
 #### References:
 
 [1] "Find root of a number using Newton's method." GeeksforGeeks, 21 Feb. 2021, www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/</br>
