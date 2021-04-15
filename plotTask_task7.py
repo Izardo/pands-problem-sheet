@@ -3,22 +3,22 @@
 
 # Author: Isabella Doyle
 
-# imports numpy and matplotlib for creating an array and plot respectively
+# imports numpy and matplotlib libraries for creating an array and plot respectively
 import numpy as np
 import matplotlib.pyplot as plt
 
-# selects graphical style for plot
+# selects the graphical style for the plot from the matplotlib library called 'ggplot' 
 plt.style.use('ggplot')
 
-# x-axis value range
-x = np.array([0, 1, 2, 3])  # uses numpy to create a multi-dimensional array of x-axes values
+# creates a numpy multi-dimensional array of x-axes values
+x = np.array([0, 1, 2, 3]) 
 
-# y-axis values
+# functions assigned to y-axis values 
 y1 = x          # f(x) = x
 y2 = x ** 2     # g(x) = x^2
 y3 = x ** 3     # h(x) = x^3
 
-# plots the values on the y-axes
+# plots the values on the y-axes with labels specifying each function
 plt.plot(y1,label='f(x) = x')
 plt.plot(y2,label='g(x) = x^2')
 plt.plot(y3,label='h(x) = x^3')
