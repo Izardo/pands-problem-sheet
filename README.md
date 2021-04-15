@@ -2,11 +2,11 @@
 This repository is dedicated to the fulfilment of the Programming and Scripting assessment as part of the Higher Diploma in Data Analytics at GMIT.</br>
 
 Creator: Isabella Doyle, Email: G00398800@gmit.ie
-(add date of completion & maybe add assessment description)
+
 ## Task 1:
 
 *Objective: Write a program that calculates somebody's Body Mass Index (BMI).*
-### Program: calculateBMI_task1.py
+#### Program: calculateBMI_task1.py
 ```
 weight = int(input("Enter weight(Kg):"))       
 height = int(input("Enter height(cm):"))        
@@ -32,7 +32,7 @@ www.ramsayhealth.co.uk/weight-loss-surgery/bmi/bmi-formula</br>
 ## Task 2:
 
 *Objective: Write a program that takes asks a user to input a string and outputs every second letter in reverse order.*
-### Program: secondString_task2.py
+#### Program: secondString_task2.py
 ```
 string = input("Enter text:")
 modString = string[::-2]
@@ -55,7 +55,7 @@ print("Your original string: {}. New modified string: {}".format(string, modStri
 ## Task 3:
 
 *Objective: Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one. Have the program end if the current value is one.*
-### Program: collatz_task3.py
+#### Program: collatz_task3.py
 ```
 while num != 1:         
     if num % 2 == 0:      
@@ -84,7 +84,7 @@ print([int(num) for num in numList])
 ## Task 4:
 
 *Objective: Write a program that outputs whether or not today is a weekday.*
-### Program: weekdayWeekend_task4.py
+#### Program: weekdayWeekend_task4.py
 ```
 from datetime import datetime  
 today = datetime.today().strftime('%A')
@@ -107,7 +107,7 @@ else:
 
 ## Task 5:
 *Objective: Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.*
-### Program: sqrt_task5.py
+#### Program: sqrt_task5.py
 ```
 numList = [0, 0]   
 
@@ -142,7 +142,7 @@ if number >= 0:
 
 ## Task 6:
 *Objective: Write a program that reads in a text file and outputs the number of e's it contains.*
-### Program: es_task6.py
+#### Program: es_task6.py
 ```
 def readText(fileName):                 # creates a function with one parameter (will be used to input a file name)
 
@@ -166,7 +166,7 @@ readText("moby-dick-task6.txt")         # calls the readText function with the f
 
 ## Task 7:
 *Objectives: Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.*
-### Program: plotTask_task7.py
+#### Program: plotTask_task7.py
 ```
 import numpy as np
 import matplotlib.pyplot as plt
