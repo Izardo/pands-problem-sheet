@@ -132,8 +132,8 @@ if number >= 0:
 
 1. First, the program prompts the user to enter a positive number. This number is then converted to a floating point number and stored in the variable 'number'. 
 2. The while loop coupled with the if statement filters out negative numbers and the number 0, while continously prompting the user to enter a postive number.
-3. When a positive number is entered, the code inside the final if statement will be executed which contains a call to the function 'sqrt(number)'. This will print a sentence containing the original number entered and its approx. square root.
-4. The sqrt() function, takes in the parameter 'number'. The while loop continously performs aritmetic to get the approximate square root of a number. After each iteration, the result of the calculation is added to numList. The while loop stops when the result of the arithmetic is the same twice in a row. This is done by comparing the current 'number' to the second last number in the numList. 
+3. When a positive number is entered, the code inside the final if statement will be executed which contains a call to the function sqrt(number). This will print a sentence containing the original number entered and its approx. square root.
+4. The sqrt() function, takes in the parameter 'number'. The while loop continously performs aritmetic to get the approximate square root of a number. After each iteration, the result of the calculation is added to numList. The while loop stops when the result of the arithmetic is the same twice in a row. This is done by comparing the current value stored in 'number' to the the value at index -2 in the numList. 
 
 #### References:
 
@@ -144,19 +144,19 @@ if number >= 0:
 *Objective: Write a program that reads in a text file and outputs the number of e's it contains.*
 #### Program: es_task6.py
 ```
-def readText(fileName):                 # creates a function with one parameter (will be used to input a file name)
+def readText(fileName):
 
-    with open(fileName, 'rt') as f:     # opens the file in read-text mode and assigns it the alias "f"
-        read = f.read()                 # reads in the file and assigns it to the value read
-        count = read.count("e")         # count method returns no. of instances the character "e" appears in the file
-        print(count)                    # prints the count when the function is called
+    with open(fileName, 'rt') as f:   
+        read = f.read()          
+        count = read.count("e")       
+        print(count)                  
 
-readText("moby-dick-task6.txt")         # calls the readText function with the file name input as an argument
+readText("moby-dick-task6.txt")         
 ```
 
 #### Understanding the code:
-1. This program defines a function called readText(fileName). It has one parameter, fileName, where we input the name of the file we want to access.
-2. When the function is called, the program opens the file passed through as a parameter in read-text mode and aliases this as f. 
+1. This program defines a function called readText(fileName). It has one parameter called fileName where we input the name of the file we want to access.
+2. When the function is called the program opens the file passed through as an argument in read-text mode and aliases this as f. 
 3. The read() method reads in the text contained in f and assigns it to the variable read. 
 4. The count() method is then applied to the read variable to count how many e's appear in the text.
 5. Finally, the function prints out the number of instances the letter e appears in the text.
