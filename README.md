@@ -39,7 +39,7 @@ modString = string[::-2]
 
 print("Your original string: {}. New modified string: {}".format(string, modString))
 ```
-Understanding the code: 
+#### Understanding the code: 
 
 1. This program requests an input of text from the user and assigns the string to the variable 'string'.
 2. It then modifies the value in string, starting a index 0, so that every second character is placed in reverse order in the variable 'modString'. 
@@ -152,8 +152,14 @@ def readText(fileName):                 # creates a function with one parameter 
         print(count)                    # prints the count when the function is called
 
 readText("moby-dick-task6.txt")         # calls the readText function with the file name input as an argument
-
 ```
+
+#### Understanding the code:
+1. This program defines a function called readText(fileName). It has one parameter, fileName, where we input the name of the file we want to access.
+2. When the function is called, the program opens the file passed through as a parameter in read-text mode and aliases this as f. 
+3. The read() method reads in the text contained in f and assigns it to the variable read. 
+4. The count() method is then applied to the read variable to count how many e's appear in the text.
+5. Finally, the function prints out the number of instances the letter e appears in the text.
 #### References:
 
 [1] "Reading and Writing Files in Python (Guide)." James Mertz, 15 Mar. 2021, realpython.com/read-write-files-python
@@ -162,42 +168,45 @@ readText("moby-dick-task6.txt")         # calls the readText function with the f
 *Objectives: Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.*
 ### Program: plotTask_task7.py
 ```
-# imports numpy and matplotlib for creating an array and plot respectively
 import numpy as np
 import matplotlib.pyplot as plt
 
-# selects graphical style for plot
 plt.style.use('ggplot')
 
-# x-axis value range
-x = np.array([0, 1, 2, 3])  # uses numpy to create a multi-dimensional array of x-axes values
+x = np.array([0, 1, 2, 3])
 
-# y-axis values
 y1 = x          # f(x) = x
 y2 = x ** 2     # g(x) = x^2
 y3 = x ** 3     # h(x) = x^3
 
-# plots the values on the y-axes
 plt.plot(y1,label='f(x) = x')
 plt.plot(y2,label='g(x) = x^2')
 plt.plot(y3,label='h(x) = x^3')
 
-# add labels for x and y axes and sets font-size
 plt.xlabel('x-axis', fontsize=8)
 plt.ylabel('y-axis', fontsize=8)
 
-# adds a plot title and sets font-size
 plt.title('Plot of functions: f(x) = x, g(x) = x^2, h(x) = x^3', fontsize=10)
 
-# adds legend to plot and sets padding
 plt.legend(loc='upper left', borderaxespad=2)
 
-# saves the plot figure
 plt.savefig('myPlot.jpg')
 
-# displays the plot figure
 plt.show()
 ```
+#### Understanding the code:
+
+1. First, the numpy and matplotlib libraries are imported.
+2. A style for the graphical plot, called ggplot, is selected from the matplotlib library. 
+3. A multi-dimensional numpy array is created with the x-axis values. The values are stored in a tuple in the array. 
+4. The y-axis functions are stored in variables y1, y2, y3. 
+5. Plt.plot() plots the values on the y-axis. The first argument is the plot itself, and the second is the label for each plot, which is the corresponding function.
+6. The plt.xlabel() and plt.ylabel() methods label the y and x-axes. The first argument is the label title and the second is the fontsize of the label. 
+7. The plt.title() method sets a title for the entire plot.
+8. Plt.legend() inserts a legend onto the plot in a specified location. The legend indicates which function corresponds to which line, using color code. 
+9. Plt.savefig() saves the graphical plot. The file name for saving the plot is specified in the brackets in single quotes. 
+10. Finally, the plt.show() method opens up a seperate window displaying the graphical plot created in this program.
+
 #### References:
 
 [1] "matplotlib.pyplot.plot" matplotlib, 26 Mar. 2021, matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html</br>
