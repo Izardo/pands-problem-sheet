@@ -20,11 +20,11 @@ number = float(input("Please enter a positive number: ")) # requests input from 
 
 # If statment filters out negative numbers and the number 0
 # If else statement executes, the square root is returned
-if number <= 0:  
-    print("Please enter a POSITIVE number: ")  # prompts the user to enter a positive number
-else:  
-    print("The square root of {} is approximately {}".format(number, sqrt(number))) # prints the approx. square root of 'number' in a sentence
 
+while number <= 0:  # filters out negative
+    number = float(input("Please enter a POSITIVE number: ")) # prompts the user to enter a positive number
+if number >= 0:
+    print("The square root of {} is approximately {}".format(number, sqrt(number))) # prints the approx. square root of 'number' in a sentence
 
 '''
 REFERENCES:
