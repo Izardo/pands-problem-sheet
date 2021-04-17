@@ -3,8 +3,8 @@
 
 # Author: Isabella Doyle
 
-weight = int(input("Enter weight(Kg):"))        # asks user to input their weight and converts from string to integer
-height = int(input("Enter height(cm):"))        # asks user to input their height and converts from string to integer
+weight = int(input("Enter weight(Kg): "))       # asks user to input their weight and converts from string to integer
+height = int(input("Enter height(cm): "))       # asks user to input their height and converts from string to integer
 
 BMI = str(round(weight/((height/100)**2),2))    # assigns the formula for calculating BMI to the variable BMI
                                                 # while rounding the calculation to two decimal places and 
