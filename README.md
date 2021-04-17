@@ -1,15 +1,16 @@
 # Pands Problem Sheet Tasks
 This repository is dedicated to the fulfilment of the Programming and Scripting assessment as part of the Higher Diploma in Data Analytics at GMIT.</br>
 
-Creator: Isabella Doyle, Email: G00398800@gmit.ie
+Creator: Isabella Doyle 
+Email: G00398800@gmit.ie
 
 ## Task 1:
 
 *Objective: Write a program that calculates somebody's Body Mass Index (BMI).*
 #### Program: calculateBMI_task1.py
 ```
-weight = int(input("Enter weight(Kg):"))       
-height = int(input("Enter height(cm):"))        
+weight = int(input("Enter weight(Kg): "))       
+height = int(input("Enter height(cm): "))        
 
 BMI = str(round(weight/((height/100)**2),2))
 
@@ -18,9 +19,9 @@ print("Your BMI is " + BMI)
 ```
 #### Understanding the code: 
 
-1. The input() function prompts the user to enter their height and weight, the string values are then converted to integer (using the int() function) and respectively assigned to the variables height and weight. 
-2. The variable BMI contains the mathematical equation for calculating BMI. Also contained in the variable are 2 functions; one which rounds the sum of the equation to two decimal places (using the round() function) and another that converts the sum to a string value (using the str() function) so that it can be concantenated with another string in the print statement. 
-3. The program will print the BMI for the input.
+1. The input() function prompts the user to enter their height and weight. The string values are then converted to integer values, using the int() function, and respectively assigned to the variables height and weight. 
+2. The variable BMI contains the mathematical equation for calculating BMI. Also contained in the variable are 2 functions; one that rounds the sum of the equation to two decimal places, using the round() function. The other  converts the sum to a string value, using the str() function, so that it can be concantenated with another string in the print statement. 
+3. The program will print the BMI for the inputted information in a sentence.
 
 #### References:
 
@@ -31,7 +32,7 @@ www.ramsayhealth.co.uk/weight-loss-surgery/bmi/bmi-formula</br>
 
 ## Task 2:
 
-*Objective: Write a program that takes asks a user to input a string and outputs every second letter in reverse order.*
+*Objective: Write a program that asks a user to input a string and outputs every second letter in reverse order.*
 #### Program: secondString_task2.py
 ```
 string = input("Enter text:")
@@ -43,14 +44,14 @@ print("Your original string: {}. New modified string: {}".format(string, modStri
 
 1. This program requests an input of text from the user and assigns the string to the variable 'string'.
 2. It then modifies the value in string, starting a index 0, so that every second character is placed in reverse order in the variable 'modString'. 
-3. Both the original and modified texts are printed using the .format method to concatenate them into a sentence. 
+3. Both the original and modified texts are printed using the .format method, concatenating them into a sentence. 
 4. Example output: Your original string: hello there. New modified string: eetolh
 
 #### References:
 
-[1] "Built-in Functions." The Python Standard Library, 29 Jan. 2021, docs.python.org/3/library/functions.html</br> 
+[1] "Built-in Functions." The Python Standard Library, 29 Jan. 2021, https://docs.python.org/3/library/functions.html</br> 
 [2] "Python Numbers." w3schools, 29 Jan. 2021, www.w3schools.com/python/python_numbers.asp</br>
-[3] "7.1. Fancier Output Formatting" The Python Standard Library, 29 Jan. 2021, www.docs.python.org/tutorial/inputoutput.html
+[3] "7.1. Fancier Output Formatting" The Python Standard Library, 29 Jan. 2021, https://docs.python.org/tutorial/inputoutput.html
 
 ## Task 3:
 
@@ -70,13 +71,13 @@ print([int(num) for num in numList])
 #### Understanding the code:
 
 1. The while loop performs a repeat loop as long as the number equals 1.
-2. Inside the while loop is an if statement. Which is exected if the number is even (the modulus operand is used to check this). If the if statment is true, the indented code block will be executed - dividing the the value stored in 'num' by two and appending the result to the numList. If the if statement is false, the else statement will be executed - 'num' is multiplied by 3 and 1 is added to it and the resut is appended to 'numList'.
+2. Inside the while loop is an if statement. The if statement is executed if the number is even (the modulus operand is used to check this). If even, the indented code block will be executed - dividing the the value stored in 'num' by two and appending the result to the numList. If the if statement is false, the else statement will be executed - 'num' is multiplied by 3 and 1 is added to it and the result is appended to 'numList'.
 3. When 'num' equals 1, the while statement will evaluate as false causing a break out of the while loop. 
 4. The print statment is then executed, which converts the list objects in 'numList' to integer objects, finally, printing the list of integers.
 
 #### References:
 
-[1] "How to Convert a Float List to an Integer List in Python." Evgeny Erunov, 07 Feb. 2021, blog.finxter.com/how-to-convert-a-float-list-to-an-integer-list-in-python</br>
+[1] "How to Convert a Float List to an Integer List in Python." Evgeny Erunov, 07 Feb. 2021, https://blog.finxter.com/how-to-convert-a-float-list-to-an-integer-list-in-python</br>
 [2] Vanderplas, Jacob T. *A Whirlwind Tour of Python.* O'Reilly Media, 2016. pp. 37</br>
 [3] "Python Lists." w3schools, 07 Feb. 2021, www.w3schools.com/python/python_lists.asp</br>
 [4] "Python For Loops." w3schools, 07 Feb. 2021, www.w3schools.com/python/python_for_loops.asp
@@ -89,7 +90,7 @@ print([int(num) for num in numList])
 from datetime import datetime  
 today = datetime.today().strftime('%A')
 
-if today == "Monday" or "Tuesday" or "Wednesday" or "Thursday":
+if today != "Saturday" or today != "Sunday":
     print("Today is {}. It's a weekday!".format(today))
 else:
     print("Today is {}. It is the weekend. Yay!")
@@ -102,7 +103,7 @@ else:
 
 ### References:
 
-[1] "8.1.7. strftime() and strptime() Behavior." The Python Standard Library, 12 Feb. 2021, docs.python.org/2/library/datetime.html#strftime-strptime-behavior</br>
+[1] "8.1.7. strftime() and strptime() Behavior." The Python Standard Library, 12 Feb. 2021, https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior</br>
 [2] "Python Datetime." - w3schools, 12 Feb. 2021, www.w3schools.com/python/python_datetime.asp
 
 ## Task 5:
@@ -131,14 +132,14 @@ if number >= 0:
 #### Understanding the code:
 
 1. First, the program prompts the user to enter a positive number. This number is then converted to a floating point number and stored in the variable 'number'. 
-2. The while loop coupled with the if statement filters out negative numbers and the number 0, while continously prompting the user to enter a postive number.
-3. When a positive number is entered, the code inside the final if statement will be executed which contains a call to the function sqrt(number). This will print a sentence containing the original number entered and its approx. square root.
-4. The sqrt() function, takes in the parameter 'number'. The while loop continously performs aritmetic to get the approximate square root of a number. After each iteration, the result of the calculation is added to numList. The while loop stops when the result of the arithmetic is the same twice in a row. This is done by comparing the current value stored in 'number' to the the value at index -2 in the numList. 
+2. The while loop coupled with the if statement filters out negative numbers and the number 0, it will continously prompt the user to enter a postive number if not entered.
+3. When a positive number is entered, the code inside the final if statement will be executed which contains a call to the function sqrt(number). This will print a sentence containing the original number entered and its approximate square root.
+4. The sqrt() function takes in one parameter: 'number'. While the while loop is true (when 'number' is not equal to the second last value in numList) it continuously executes and the indented code performs aritmetic to get the approximate square root of a number. After each iteration, the result of the calculation is added to numList. The while loop stops when the result of the arithmetic is the same twice in a row. This is done by comparing the current value stored in 'number' to the the value at index -2 in the numList. 
 
 #### References:
 
 [1] "Find root of a number using Newton's method." GeeksforGeeks, 21 Feb. 2021, www.geeksforgeeks.org/find-root-of-a-number-using-newtons-method/</br>
-[2] "Newton Square Root Method in Python." Siddik Acil, 23 Feb. 2021, medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
+[2] "Newton Square Root Method in Python." Siddik Acil, 23 Feb. 2021, https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
 
 ## Task 6:
 *Objective: Write a program that reads in a text file and outputs the number of e's it contains.*
@@ -155,14 +156,14 @@ readText("moby-dick-task6.txt")
 ```
 
 #### Understanding the code:
-1. This program defines a function called readText(fileName). It has one parameter called fileName where we input the name of the file we want to access.
+1. This program defines a function called readText(). It has one parameter called fileName where we input the name of the file we want to access.
 2. When the function is called the program opens the file passed through as an argument in read-text mode and aliases this as f. 
 3. The read() method reads in the text contained in f and assigns it to the variable read. 
 4. The count() method is then applied to the read variable to count how many e's appear in the text.
 5. Finally, the function prints out the number of instances the letter e appears in the text.
 #### References:
 
-[1] "Reading and Writing Files in Python (Guide)." James Mertz, 15 Mar. 2021, realpython.com/read-write-files-python
+[1] "Reading and Writing Files in Python (Guide)." James Mertz, 15 Mar. 2021, https://realpython.com/read-write-files-python
 
 ## Task 7:
 *Objectives: Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.*
@@ -209,8 +210,8 @@ plt.show()
 
 #### References:
 
-[1] "matplotlib.pyplot.plot" matplotlib, 26 Mar. 2021, matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html</br>
-[2] "Style sheets reference" matplotlib, 30 Mar. 2021, matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html</br>
+[1] "matplotlib.pyplot.plot" matplotlib, 26 Mar. 2021, https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html</br>
+[2] "Style sheets reference" matplotlib, 30 Mar. 2021, https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html</br>
 [3] "Matplotlib Pyplot." w3schools, 26 Mar. 2021, www.w3schools.com/python/matplotlib_pyplot.asp</br>
-[4] "Python Plotting With Matplotlib (Guide)" Brad Solomon, 28 Mar. 2021, realpython.com/python-matplotlib-guide/</br>
-[5] "How to change the font size on a matplotlib plot." Herman Schaaf, 30 Mar. 2021, stackoverflow.com/questions/3899980/how-to-change-the-font-size-on-a-matplotlib-plot
+[4] "Python Plotting With Matplotlib (Guide)" Brad Solomon, 28 Mar. 2021, https://realpython.com/python-matplotlib-guide/</br>
+[5] "How to change the font size on a matplotlib plot." Herman Schaaf, 30 Mar. 2021, https://stackoverflow.com/questions/3899980/how-to-change-the-font-size-on-a-matplotlib-plot
