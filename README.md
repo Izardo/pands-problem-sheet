@@ -1,7 +1,7 @@
 # Pands Problem Sheet Tasks
 This repository is dedicated to the fulfilment of the Programming and Scripting assessment as part of the Higher Diploma in Data Analytics at GMIT.</br>
 
-Creator: Isabella Doyle 
+Creator: Isabella Doyle</br>
 Email: G00398800@gmit.ie
 
 ## Task 1:
@@ -19,7 +19,7 @@ print("Your BMI is " + BMI)
 ```
 #### Understanding the code: 
 
-1. The input() function prompts the user to enter their height and weight. The string values are then converted to integer values, using the int() function, and respectively assigned to the variables height and weight. 
+1. The input() function prompts the user to enter their height and weight. The string values are then converted to integer values using the int() function, and respectively assigned to the variables height and weight. 
 2. The variable BMI contains the mathematical equation for calculating BMI. Also contained in the variable are 2 functions; one that rounds the sum of the equation to two decimal places, using the round() function. The other  converts the sum to a string value, using the str() function, so that it can be concantenated with another string in the print statement. 
 3. The program will print the BMI for the inputted information in a sentence.
 
@@ -70,10 +70,10 @@ print([int(num) for num in numList])
 ```
 #### Understanding the code:
 
-1. The while loop performs a repeat loop as long as the number equals 1.
+1. The while loop performs a repeat loop as long as the value in num does not equal 1.
 2. Inside the while loop is an if statement. The if statement is executed if the number is even (the modulus operand is used to check this). If even, the indented code block will be executed - dividing the the value stored in 'num' by two and appending the result to the numList. If the if statement is false, the else statement will be executed - 'num' is multiplied by 3 and 1 is added to it and the result is appended to 'numList'.
 3. When 'num' equals 1, the while statement will evaluate as false causing a break out of the while loop. 
-4. The print statment is then executed, which converts the list objects in 'numList' to integer objects, finally, printing the list of integers.
+4. The print statment is then executed, which converts the list objects in 'numList' to integer objects, finally printing the list of integers.
 
 #### References:
 
@@ -132,9 +132,9 @@ if number >= 0:
 #### Understanding the code:
 
 1. First, the program prompts the user to enter a positive number. This number is then converted to a floating point number and stored in the variable 'number'. 
-2. The while loop coupled with the if statement filters out negative numbers and the number 0, it will continously prompt the user to enter a postive number if not entered.
+2. The while loop coupled with the if statement filters out negative numbers and the number 0. If a positive number is not entered, the while loop continously prompts the user to enter a postive number.
 3. When a positive number is entered, the code inside the final if statement will be executed which contains a call to the function sqrt(number). This will print a sentence containing the original number entered and its approximate square root.
-4. The sqrt() function takes in one parameter: 'number'. While the while loop is true (when 'number' is not equal to the second last value in numList) it continuously executes and the indented code performs aritmetic to get the approximate square root of a number. After each iteration, the result of the calculation is added to numList. The while loop stops when the result of the arithmetic is the same twice in a row. This is done by comparing the current value stored in 'number' to the the value at index -2 in the numList. 
+4. The sqrt() function takes in one parameter: a number. While the while loop is true (when 'number' is not equal to the second last value in numList) it continuously executes and the indented code performs aritmetic to get the approximate square root of a number. After each iteration, the result of the calculation is added to numList. The while loop stops when the result of the arithmetic is the same twice in a row. This is done by comparing the current value stored in 'number' to the the value at index -2 in the numList. 
 
 #### References:
 
